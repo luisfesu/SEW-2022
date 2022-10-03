@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <!-- metadatos que describen el documento -->
+    <meta charset="UTF-8" />
+    
+    <meta name="author" content="Luis A. Fernandez Suarez"/>
+    <meta name="description" content="Pagina dedicada a recopilar información sobre el sistema de tipos en TypeScript y como estos funcionan."/>
+    <meta name="keywords" content="TypeScript, JavaScript, tipos, programación, tipado "/>
+
+    <!-- Especificacion del viewport en el documento para la adaptabilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo del documento -->
+    <title>El tipado en Typscript</title>
+
+    <!-- Referencia a la hoja de estilos del documento -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />    
+  </head>
+
+  <body>
+      <!-- Encabezado del documento -->
+      <header>
+        <h1>El Sistema de Tipos en TypeScript</h1>
+      </header>
+      
+      <!-- Contenido principal del documento-->
+      <main>
+        <section>
+          <p>
+            El sistema de tipos de Typescript realiza una formalización de los tipos de Javascript, mediante una representación estática de sus tipos dinámicos. Esto permite a los desarrolladores definir variables y funciones tipadas sin perder la esencia de Javascript. Poder definir los tipos durante el tiempo de diseño nos ayuda a evitar errores en tiempo de ejecución, como podría ser pasar el tipo de variable incorrecto a una función. 
+          </p>
+          <p>
+            Como su nombre indica, todo en Typescript trata de tipos. Como Typescript es la versión tipificada de JS, podemos especificar tipos a las variables cuando se declaran. 
+          </p>
+          <p>
+            Javascript está tipado dinámicamente, lo que significa que no conoce el tipo de su variable hasta el tiempo de ejecución y las variables pueden cambiar de tipo. Incluso si las cambiamos intencionadamente, a menudo surgen errores y fallos. Typescript ayuda con este problema añadiendo tipos estáticos al código. 
+          </p>
+          <p>
+            Esto hace que tu código sea más escalable y fiable, y puedes comprobar que tu código se ejecuta correctamente antes del tiempo de ejecución. 
+          </p>
+          <p>
+            Hay tres categorías de tipos en Typescript: any, Built-in,  y Object-Types. 
+          </p>
+          <ul>
+            <li>
+              El tipo any,   es un superconjunto de todos los tipos de datos de Typescript, y es el más laxo de los que disponemos. Significa que una variable puede ser de cualquier tipo. Si usamos este tipo, se anulará la comprobación de tipos. 
+            </li>
+            <li>
+              Built-in incluyen el número, la cadena, el enum, el booleano, el indefinido, el nulo y el vacío. 
+            </li>
+            <li>
+              Object Types:  incluyen, array, funcion, clases e interfaces y tuplas. 
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tipos simples en Typescript</h2>
+          <p>
+            Los tipos primitivos son los tipos Number, Boolean, String, Symbol, Void, Null e Undefined y todos los tipos de enumeración definidos por el usuario. 
+          </p>
+
+          <ul>
+            <li>
+              String: Typescript sigue la misma sintaxis de Javascript con comillas dobles o simples alrededor del texto.   
+            </li>
+            <li>
+              Number: Typescript admite números decimales, hexadecimales, octales y literales binarios. En Typescript, todos los números son valores de punto flotante. 
+            </li>
+            <li>
+              Symbol: El tipo primitivo de símbolo corresponde al tipo primitivo de JavaScript de nombre similar y representa tokens únicos que se pueden usar como claves para las propiedades de los objetos.
+            </li>
+            <li>
+              Enum: 
+            </li>
+            <li>
+              Boolean: tipo de dato lógico que representa verdadero o falso. 
+            </li>
+            <li>
+              Void: indica que una función no devolverá ningún valor. 
+            </li>
+            <li>
+              Never: este tipo representa el tipo de valores que nunca se producen. 
+            </li>
+          </ul>
+          <img src="multimedia/images/tipos_simples_typescript.png" alt="Ejemplo de tipos simples en Typescript">
+        </section>
+        
+        <section>
+          <h2>Tipos objetos en TypeScript</h2>
+          <p>
+            Los tipos de objetos se componen de propiedades, firmas de llamada, firmas de construcción y firmas de índice, denominados colectivamente miembros.
+          </p>
+          <p>
+            Las referencias de tipo de clase e interfaz, los tipos de matrices, los tipos de tuplas, los tipos de funciones y los tipos de constructores se clasifican como tipos de objetos. Múltiples construcciones en el lenguaje TypeScript crean tipos de objetos, que incluyen:
+          </p>
+          <ul>
+            <li>Literales de tipo de objeto. </li>
+            <li>Literales de tipo matriz. </li>
+            <li>Literales tipo tupla. </li>
+            <li>Literales de tipo de función. </li>
+            <li>Literales de tipo constructor. </li>
+            <li>Objetos literales. </li>
+            <li>Matriz de literales. </li>
+            <li>Expresiones de funciones y declaraciones de funciones. </li>
+            <li>Tipos de funciones constructoras creadas por declaraciones de clase. </li>
+            <li>Tipos de instancias de espacios de nombres creados por declaraciones de espacios de nombres. </li>
+          </ul>
+        </section>
+
+      </main>
+
+      <!-- Pie de pagina del documento -->
+      <footer>
+        <img src="multimedia/images/uniovi_logo.png" alt="logo de Uniovi">
+        TypeScript, Pagina creada para la asignatura Software y Estandares Web - <a href="https://ingenieriainformatica.uniovi.es/">EII, Oviedo</a> - 2022
+    </footer>
+  </body>
+    
+</html>

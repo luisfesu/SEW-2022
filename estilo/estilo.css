@@ -1,11 +1,15 @@
-/****
-/*Especificidad: 001
+/*Especificidad: 001*/
+/*
 body {
   font-family: Tahoma, sans-serif;
   color: #818181;
   background-color: #fff;
   }
+*/
+
+
 /*Especificidad: 001*/
+/*
 h1 {
   color: #fff;    
   background-color:#FF5733; 
@@ -13,6 +17,7 @@ h1 {
   padding: 2em; 
   text-align: center;     
   }
+
 */
 
 /*****************************************
@@ -20,3 +25,43 @@ h1 {
     
     Descripcion de la hoja de estilos
 *****************************************/
+
+footer {
+  background-color: #3178C6;
+  color: #FAF9F8;
+}
+
+/* 
+-- Table Style: ---------------------------------------------------------------------------
+*/
+/*Especificidad: 001*/
+table{
+  width: 90%;
+  border-collapse: collapse;
+}
+
+/*Especificidad: 002*/
+table caption {
+  visibility: hidden;
+}
+
+/* TO ASK:
+      diferencia entre nav > a Y nav a
+      section > a => solo afecta a <a>2 (hijo)
+      section   a => afecta a todos los <a> dentro
+      <section>
+      <p> 
+        <a>1....
+      </>
+      <a>2...
+      </>
+*/
+/*Especificidad: 002*/
+table th, td, tr{
+ 
+  padding: 0.35em;
+
+  border-color: #000;
+  border-width:  0.15em;
+  border-style: solid;
+}
