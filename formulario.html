@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <!-- metadatos que describen el documento -->
+    <meta charset="UTF-8" />
+    
+    <meta name="author" content="Luis A. Fernandez Suarez"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <!-- Especificacion del viewport en el documento para la adaptabilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo del documento -->
+    <title> Formulario sobre TypeScript </title>
+
+    <!-- Referencia a la hoja de estilos del documento -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />    
+  </head>
+
+  <body>
+      <!-- Encabezado del documento -->
+      <header>
+        <h1>Formulario sobre TypeScript</h1>
+      </header>
+
+      <!-- Menu de Navegacion -->
+      <nav>
+        <h2>Navegación</h2>
+  
+            <a title="Index" tabindex="1" accesskey="I" href="index.html">Inicio </a>
+  
+            <a title="Sistema deTipos" tabindex="2" accesskey="t" href="tipos.html"> Sistema deTipos</a>
+  
+            <a title="Versiones" tabindex="3" accesskey="v" href="versiones.html"> Versiones </a>
+  
+            <a title="Formulario" tabindex="4" accesskey="f" href="formulario.html"> Formulario </a>
+      </nav>
+      
+      <!-- Contenido principal del documento-->
+      <main>
+        <form name="Formulario Sobre el Lenguaje TypeScript">
+          <p>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name"><br> 
+          </p>
+          <p>
+            <label for="mail">Email:</label><br>
+            <input type="email" id="mail"><br> 
+          </p>
+          
+          <p>
+            <label for="phone">Tfno.:</label><br>
+            <input type="tel" id="phone"><br> 
+          </p>
+          <p>
+            <fieldset>
+              <legend>¿Ha utilizado TypeScript alguna vez?</legend><br>
+              
+                <input type="radio" id="si-mucho">
+                <label for="si-mucho"> Sí, utilizo TypeScript habitualmente</label><br>
+              
+              
+                <input type="radio" id="si-poco">
+                <label for="si-poco"> Sí, he utilizado TypeScript en alguna ocasión</label><br>
+              
+              
+                <input type="radio" id="no" checked>
+                <label for="no"> No, nunca he utilizado TypeScript.</label><br>
+              
+            </fieldset>
+          </p>
+
+          <p>
+            <fieldset>
+                <legend>¿Que apartado del Lenguaje te gustaria conocer en mayor profundidad? </legend>
+
+
+                <input type="checkbox" id="tipos" >
+                <label for="tipos"> Sistema de Tipos</label><br>
+
+                <input type="checkbox" id="exp" >
+                <label for="exp"> Expresiones </label><br>
+
+                <input type="checkbox" id="func" >
+                <label for="func"> Funciones </label><br>
+
+                <input type="checkbox" id="classes" >
+                <label for="classes"> Clases e Interfaces </label><br>
+
+                <input type="checkbox" id="scripts" >
+                <label for="scripts"> Scripts y modulos </label><br>
+
+
+
+            </fieldset>
+          </p>
+          
+          <p>
+            <label for="comentario"> ¿Qué le gustaría comentar? </label>
+            <textarea id="comentario" cols="50" rows="10"></textarea>
+          </p>
+          
+          <p>
+            <input type="reset" value="Vacia el Formulario"> 
+          </p>
+          <p>
+            <input type="submit" value="Envia el Formulario">
+          </p>
+        </form>
+      </main>
+
+      <!-- Pie de pagina del documento -->
+      <footer>
+        <img src="multimedia/images/uniovi_logo.png" alt="logo de Uniovi">
+        TypeScript, Pagina creada para la asignatura Software y Estandares Web - <a href="https://ingenieriainformatica.uniovi.es/">EII, Oviedo</a> - 2022
+    </footer>
+  </body>
+    
+</html>

@@ -24,6 +24,19 @@
       <header>
         <h1>La Evolucion de TypeScript</h1>
       </header>
+
+      <!-- Menu de Navegacion -->
+      <nav>
+        <h2>Navegación</h2>
+  
+            <a title="Index" tabindex="1" accesskey="I" href="index.html">Inicio </a>
+  
+            <a title="Sistema deTipos" tabindex="2" accesskey="t" href="tipos.html"> Sistema deTipos</a>
+  
+            <a title="Versiones" tabindex="3" accesskey="v" href="versiones.html"> Versiones </a>
+  
+            <a title="Formulario" tabindex="4" accesskey="f" href="formulario.html"> Formulario </a>
+      </nav>
       
       <!-- Contenido principal del documento-->
       <main>
@@ -56,11 +69,12 @@
             <table>
               <caption> Lista de Versiones de TypeScript </caption>
               <thead>
-
-                      <th> SN </th>
-                      <th> Version </th>
-                      <th> Release Date </th>
-                      <th> Significant Changles </th>
+                      <tr>
+                        <th> SN </th>
+                        <th> Version </th>
+                        <th> Release Date </th>
+                        <th> Significant Changles </th>
+                      </tr>
                 </thead>
               <tbody>
                   <tr> <th> 1.  </th> <td> 0.8 </td> <td> 01-10-2012 </td> <td> - </td> </tr> 
@@ -80,12 +94,26 @@
           </section>
 
           <section>
-            <h2></h2>
+            <h2>Lo nuevo en la versión 2.0</h2>
+            <p>
+              Al programar en Javascript con librerías como Jquery, Angular, Backbone u otras, tenemos en cada caso un conjunto de métodos, clases y miembros propios de la librería que usamos. Si queremos usar esas librerías dentro de Typescript debemos definir los tipos de clases y métodos. 
+            </p>
+            <p>
+              En las versiones anteriores de Typescript, los TSD se localizaban mediante un gestor de paquetes llamado Typescript Definition Manager, en librerías definidas por una comunidad llamada DefinitelyTyped. El desarrollador debía aprender cómo declarar archivos basados en DefinitelyTyped. 
+            </p>
+            <p>
+              En la versión 2.0 la declaración de los TSD es más simple pues usa Node Package Manager (npm) para realizar la tarea la declaración se hace así: 
+            </p>
+            <p>
+              npm install -s @types/lodash 
+            </p>
+            <p>
+              Con esto no es necesario utilizar herramientas adicionales para instalar librerias en un proyecto de Typescript; npm permite que sean declaradas e importadas sin problema en la cabecera del código y como dependencias en el archivo package.json 
+            </p>
           </section>
           
       </main>
 
-      <!-- Pie de pagina del documento -->
       <!-- Pie de pagina del documento -->
     <footer>
       <img src="multimedia/images/uniovi_logo.png" alt="logo de Uniovi">
