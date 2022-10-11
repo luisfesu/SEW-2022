@@ -1,0 +1,132 @@
+/*Especificidad: 001*/
+/*
+body {
+  font-family: Tahoma, sans-serif;
+  color: #818181;
+  background-color: #fff;
+  }
+*/
+
+
+/*Especificidad: 001*/
+/*
+h1 {
+  color: #fff;    
+  background-color:#FF5733; 
+  text-transform: uppercase;
+  padding: 2em; 
+  text-align: center;     
+  }
+
+*/
+
+/*****************************************
+    Luis A. Fernandez Suarez - UO271430
+    
+    Descripcion de la hoja de estilos
+*****************************************/
+
+header {
+
+  background-color: #3178C6;
+  color: #FAF9F8;
+
+  padding: 3%;
+  margin: 1.9%;
+
+  border-width: 1%;
+  border-style: solid;
+  border-color: #00273F;
+
+  /* Borde redondeado */
+  border-radius: 1ex; 
+}
+
+
+body {
+  background-color: #235A97;
+}
+
+main > section {
+  background-color: #FAF9F8;
+  margin: 2%;
+  padding: 3%;
+
+  /* Borde redondeado */
+  border-radius: 1ex;
+}
+main article {
+  background-color: #FAF9F8;
+  margin: 2%;
+  padding: 3%;
+
+  /* Borde redondeado */
+  border-radius: 1ex;
+}
+
+section h2 {
+  color:#00273F;
+}
+
+section h3 {
+  background-color: #F1DD35;
+  color:  black;
+  
+  padding-left: 1.5%;
+  padding: 1%;
+}
+
+form {
+  margin: 2%;
+}
+
+/*PREGUNTAR POR ESTO*/
+input:nth-last-child(-n+1) {
+  padding: 2%;
+  background-color: #F1DD35;
+  border-radius: 1ex;
+}
+
+footer {
+  background-color: #3178C6;
+  color: #FAF9F8;
+}
+
+/* Preguntar si esto está bien */
+body > p, body legend, body label {
+  color: #FAF9F8;
+}
+
+
+nav {
+  background-color: #3178C6;
+  color: #FAF9F8;
+  
+  margin: 1.9%;
+
+  border-width: 1%;
+  border-style: solid;
+  border-color: #00273F;
+}
+
+
+nav > a {
+  margin: 2%;
+  padding: 1.5%;
+
+  font-size: large;
+
+  background-color: #F1DD35;
+  color: #000;
+
+  border-width: 0.3ex;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 1ex;
+}
+
+
+
+
+/* 
+-- Table Style: ---------------------------------------------------------------------------

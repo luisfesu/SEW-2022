@@ -17,11 +17,14 @@
 
     <!-- Referencia a la hoja de estilos del documento -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />    
+    <link rel="stylesheet" type="text/css" href="estilo/trabajo.css" />    
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />    
   </head>
 
   <body>
       <!-- Encabezado del documento -->
       <header>
+        <img src="multimedia/images/logo_typescript_128px_singlecolor.png" alt="logo de Typescript monocromático">
         <h1>La Evolucion de TypeScript</h1>
       </header>
 
@@ -40,58 +43,66 @@
       
       <!-- Contenido principal del documento-->
       <main>
-          <section>
+          <article>
             <h2>Historia de TypeScript</h2>
-            <h3>Breve Resumen</h3>
-            <p>
-              TypeScript es un lenguaje relativamente nuevo. Fue lanzado para uso público en octubre de 2012, como la versión 0.8 del lenguaje. Fue el resultado de dos años de desarrollo en Microsoft, con Anders Hejlsberg, el arquitecto principal de c#, así como el creador de Delphi y Turbo Pascal trabajando también en el proyecto.
-            </p>
-            <p>
-              Poco después de su lanzamiento, el lenguaje fue elogiado por Miguel de Icaza, programador mexicano de código libre creador de GNOME. Sin embargo, también criticó la ausencia de soporte IDE para TypeScript, excepto Microsoft Visual Studio, que no está disponible en Linux y OS X. 
+            
+            <section>
+              <h3>Breve Resumen</h3>
+              <p>
+                TypeScript es un lenguaje relativamente nuevo. Fue lanzado para uso público en octubre de 2012, como la versión 0.8 del lenguaje. Fue el resultado de dos años de desarrollo en Microsoft, con Anders Hejlsberg, el arquitecto principal de c#, así como el creador de Delphi y Turbo Pascal trabajando también en el proyecto.
+              </p>
+              <p>
+                Poco después de su lanzamiento, el lenguaje fue elogiado por Miguel de Icaza, programador mexicano de código libre creador de GNOME. Sin embargo, también criticó la ausencia de soporte IDE para TypeScript, excepto Microsoft Visual Studio, que no está disponible en Linux y OS X.
+              </p>
+              <p>
+                Esta falta de compatibilidad con un entorno de desarrollo integrado  fue solucionada en 2013, cuando la compatibilidad con TypeScript se introdujo en otros IDE, como Eclipse, mediante un complemento proporcionado por Palantir Technologies. También se integró el soporte para TypeScript en varios editores de texto, como Sublime, Vim y Emacs.
+              </p>
+              <p>
+                TypeScript 0.8 fue seguido por una versión más nueva, TypeScript 0.9, que se lanzó en 2013. La edición más reciente tenía una función adicional: soporte para genéricos. TypeScript 0.9 fue reemplazado por TypeScript 1.0, que se lanzó en la Build 2014. La segunda actualización de Visual Studio 2013 proporciona soporte predeterminado para TypeScript.
+              </p>
+              <p>
+                Su equipo de desarrollo anunció un nuevo compilador para el lenguaje en julio de 2014. El equipo afirmó que el nuevo compilador aportaría cinco veces más rendimiento en sí mismo. Casi al mismo tiempo, el código fuente de TypeScript, que originalmente estaba alojado en CodePlex, se cambió a Github.
+              </p>
+              <p>
+                El 22 de septiembre de 2016, se lanzó TypeScript 2.0. Esta versión introdujo varias características, entre ellas la capacidad de evitar la asignación a nulo de las variables.
+              </p>
+            </section>
 
-            </p>
-            <p>
-              Esta falta de compatibilidad con un entorno de desarrollo integrado  fue solucionada en 2013, cuando la compatibilidad con TypeScript se introdujo en otros IDE, como Eclipse, mediante un complemento proporcionado por Palantir Technologies. También se integró el soporte para TypeScript en varios editores de texto, como Sublime, Vim y Emacs.
-            </p>
-            <p>
-              TypeScript 0.8 fue seguido por una versión más nueva, TypeScript 0.9, que se lanzó en 2013. La edición más reciente tenía una función adicional: soporte para genéricos. TypeScript 0.9 fue reemplazado por TypeScript 1.0, que se lanzó en la Build 2014. La segunda actualización de Visual Studio 2013 proporciona soporte predeterminado para TypeScript.
-            </p>
-            <p>
-              Su equipo de desarrollo anunció un nuevo compilador para el lenguaje en julio de 2014. El equipo afirmó que el nuevo compilador aportaría cinco veces más rendimiento en sí mismo. Casi al mismo tiempo, el código fuente de TypeScript, que originalmente estaba alojado en CodePlex, se cambió a Github.
-            </p>
-            <p>
-              El 22 de septiembre de 2016, se lanzó TypeScript 2.0. Esta versión introdujo varias características, entre ellas la capacidad de evitar la asignación a nulo de las variables.
-            </p>
-            <h3>Lista de versiones</h3>
-            <p>
-              Se proporciona a continuación el historial completo de versiones de TypeScript. También puede ver la documentación completa de las versiones recientes en GitHub. 
-            </p>
-            <table>
-              <caption> Lista de Versiones de TypeScript </caption>
-              <thead>
-                      <tr>
-                        <th> SN </th>
-                        <th> Version </th>
-                        <th> Release Date </th>
-                        <th> Significant Changles </th>
-                      </tr>
-                </thead>
-              <tbody>
-                  <tr> <th> 1.  </th> <td> 0.8 </td> <td> 01-10-2012 </td> <td> - </td> </tr> 
-                  <tr> <th> 2.  </th> <td> 0.9 </td> <td> 18-06-2013 </td> <td> - </td> </tr>
-                  <tr> <th> 3.  </th> <td> 1.1 </td> <td>	06-10-2014 </td> <td> Performance Improvements     </td> </tr> 
-                  <tr> <th> 4.  </th> <td> 1.3 </td> <td> 12-11-2014 </td> <td> Protected modifier, tuple types   </td> </tr>
-                  <tr> <th> 5.  </th> <td> 1.4 </td> <td> 20-01-2015 </td> <td> union types, let and const declarations, type guards, type aliases, template strings   </td> </tr>
-                  <tr> <th> 6.  </th> <td> 1.5 </td> <td> 20-07-2015 </td> <td> ES6 modules, decorators, for..of support, namespace keyword    </td> </tr>
-                  <tr> <th> 7.  </th> <td> 1.6 </td> <td> 16-09-2015 </td> <td> JSX support, abstract classes and methods, local type declarations, intersection types, user-defined type guard functions       </td> </tr>
-                  <tr> <th> 8.  </th> <td> 1.7 </td> <td> 30-11-2015 </td> <td> async and await support         </td> </tr>   
-                  <tr> <th> 9.  </th> <td> 1.8 </td> <td> 22-02-2016 </td> <td> constraints generic, control flow analysis errors, string literal types, allowJs        </td> </tr>   
-                  <tr> <th> 10. </th> <td> 2.0 </td> <td>	22-09-2016 </td> <td> control flow based type analysis, null-and undefined-aware types, never type, discriminated union types, readonly keyword, type of this for functions         </td> </tr>   
-                  <tr> <th> 11. </th> <td> 2.1 </td> <td> 08-11-2016 </td> <td> mapped types, keyof and lookup types, object spread and rest         </td> </tr>   
-              </tbody>
-          </table>
+            <section>
+              <h3>Lista de versiones</h3>
+              <p>
+                Se proporciona a continuación el historial completo de versiones de TypeScript. También puede ver la documentación completa de las versiones recientes en GitHub.
+              </p>
+              <table>
+                <caption> Lista de Versiones de TypeScript </caption>
+                <thead>
+                        <tr>
+                          <th> Version </th>
+                          <th> Fecha de Salida </th>
+                          <th> Cambios Significativos </th>
+                        </tr>
+                  </thead>
+                <tbody>
+                    <tr>  <td> 0.8 </td> <td> 01-10-2012 </td> <td> - </td> </tr>
+                    <tr>  <td> 0.9 </td> <td> 18-06-2013 </td> <td> - </td> </tr>
+                    <tr>  <td> 1.1 </td> <td>	06-10-2014 </td> <td> Mejoras de rendimiento     </td> </tr>
+                    <tr>  <td> 1.3 </td> <td> 12-11-2014 </td> <td> Modificador protegido, tipos de tupla  </td> </tr>
+                    <tr>  <td> 1.4 </td> <td> 20-01-2015 </td> <td> tipos de unión, declaraciones let y const, protectores de tipo, alias de tipo, cadenas de plantilla </td> </tr>
+                    <tr>  <td> 1.5 </td> <td> 20-07-2015 </td> <td> Módulos ES6, decoradores, para... de soporte, palabra clave de espacio de nombres    </td> </tr>
+                    <tr>  <td> 1.6 </td> <td> 16-09-2015 </td> <td> Compatibilidad con JSX, clases y métodos abstractos, declaraciones de tipos locales, tipos de intersección, funciones de protección de tipos definidas por el usuario       </td> </tr>
+                    <tr>  <td> 1.7 </td> <td> 30-11-2015 </td> <td> soporte para async y await         </td> </tr>
+                    <tr>  <td> 1.8 </td> <td> 22-02-2016 </td> <td> restricciones genéricas, errores de análisis de flujo de control, tipos de literales de cadena, allowJs        </td> </tr>
+                    <tr>  <td> 2.0 </td> <td>	22-09-2016 </td> <td> análisis de tipo basado en flujo de control, tipos conscientes de nulos e indefinidos, palabra clave de solo lectura   </td> </tr>
+                    <tr>  <td> 2.1 </td> <td> 08-11-2016 </td> <td> tipos mapeados, tipos keyof y de búsqueda, extensión y descanso de objetos         </td> </tr>
+                </tbody>
+              </table>
 
-          </section>
+              <p>
+                Una tabla completa con las versiones publicadas del lenguaje TypeScript puede ser encontrada en el portal JavatPoint a traves de <a href="https://www.javatpoint.com/typescript-versions">este enlace</a>. Tambien se puede consultar los cambios y actualizaciones en las versiones a traves del <a href="https://github.com/Microsoft/TypeScript/releases">repositorio de TypeScript</a> en el github oficial de Microsoft.
+              </p>
+
+            </section>
+          </article>
 
           <section>
             <h2>Lo nuevo en la versión 2.0</h2>

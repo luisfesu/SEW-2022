@@ -1,0 +1,9 @@
+/*Especificidad: 001*/
+nav {
+
+    display: flex;
+    justify-content:  flex-start;
+
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
