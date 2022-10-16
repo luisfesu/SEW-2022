@@ -65,23 +65,29 @@
             <label for="phone">Tfno.:</label><br>
             <input type="tel" id="phone"><br> 
           </p>
-          <p>
-            <fieldset>
-              <legend>¿Ha utilizado TypeScript alguna vez?</legend><br>
-              
-                <input type="radio" id="si-mucho">
-                <label for="si-mucho"> Sí, utilizo TypeScript habitualmente</label><br>
-              
-              
-                <input type="radio" id="si-poco">
-                <label for="si-poco"> Sí, he utilizado TypeScript en alguna ocasión</label><br>
-              
-              
-                <input type="radio" id="no" checked>
-                <label for="no"> No, nunca he utilizado TypeScript.</label><br>
-              
-            </fieldset>
-          </p>
+          
+          <fieldset>
+            <legend>¿Ha utilizado TypeScript alguna vez?</legend><br>
+            
+              <p>
+                <input type="radio" id="si-mucho" name="radio-ts" />
+                <label for="si-mucho"> Sí, utilizo TypeScript habitualmente</label>
+              </p>
+            
+            
+              <p>
+                <input type="radio" id="si-poco"  name="radio-ts"/>
+                <label for="si-poco"> Sí, he utilizado TypeScript en alguna ocasión</label>
+              </p>
+            
+            
+              <p>
+                <input type="radio" id="no"  name="radio-ts" checked/>
+                <label for="no"> No, nunca he utilizado TypeScript.</label>
+              </p>
+            
+          </fieldset>
+          
 
           <p>
             <fieldset>
@@ -114,10 +120,12 @@
           </p>
           
           <p>
-            <input type="reset" value="Vacia el Formulario"> 
+            <label for="reset-button"> Boton de Reset </label>
+            <input id="reset-button" type="reset" value="Vacia el Formulario"> 
           </p>
           <p>
-            <input type="submit" value="Envia el Formulario">
+            <label for="submit-button"> Boton de envio </label>
+            <input id="submit-button" type="submit" value="Envia el Formulario">
           </p>
         </form>
       </main>
