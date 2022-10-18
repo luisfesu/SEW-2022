@@ -24,9 +24,7 @@ body {
     background-color: #FAF9F8;
   }
 
-  main article {
-    background-color: #FAF9F8;
-  }
+
 
   /*Especificidad: 002*/
 section h2 {
@@ -62,4 +60,26 @@ nav > a {
     font-size: large;
     background-color: #F1DD35;
     color: #000;
+}
+
+/* estilo de tabla */
+
+table {
+  border-collapse: collapse;
+}
+
+/*Especificidad: 002*/
+table caption {
+  visibility: hidden;
+}
+
+
+/*Especificidad: 002*/
+table th, td, tr{
+ 
+  padding: 0.35em;
+
+  border-color: #000;
+  border-width:  0.15em;
+  border-style: solid;
 }

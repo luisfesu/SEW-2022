@@ -1,9 +1,7 @@
 /*Especificidad: 001*/
-nav {
-
-    
+nav {   
     display: flex;
-    flex-direction: row;
+
     flex-flow: row wrap;
     justify-content:  flex-start;
 
@@ -14,17 +12,17 @@ nav {
 }
 
 
-body {
+/* body {
 
     width: fit-content;
 
     display: grid;
     grid-template-areas: 
-        "header"
-        "nav"
-        ". | main | ." 
-        ". | main | ."
-        "footer"
+        " header header header"
+        "nav nav nav"
+        ".  main  ." 
+        ".  main  ." 
+        "footer footer footer"
     ;
     
 }
@@ -38,23 +36,33 @@ header{
 
 main {
     grid-area: "main";
-}
+} */
 
 section {
     display:grid;
-    grid-column: 1;
 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
     
-    align-content:  stretch;
-
-    grid-auto-rows: auto;
-
-    
-
 }
 
+section h2 {
+    grid-row: 1;
+    grid-column: 1 ;
+    justify-self: center;
+}
 section img {
+    grid-row: 1;
+    grid-column: 2 ;
+}
+section > section {
     display: block;
+    grid-column: 1 / span 2;
+}
+
+
+section img {
+
     place-self: center;
 
 
@@ -63,7 +71,6 @@ section img {
 }
 
 section video {
-
     align-self:stretch;
     display: block;
     justify-self:stretch;
