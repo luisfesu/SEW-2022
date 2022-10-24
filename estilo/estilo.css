@@ -45,10 +45,6 @@ footer {
     background-color: #3178C6;
 }
 
-/*Especificidad: 002*/
-body > p, legend, label {
-    color: #FAF9F8;
-  }
 
 nav {
     background-color: #3178C6;
@@ -76,7 +72,6 @@ table caption {
 
 /*Especificidad: 002*/
 table th, td, tr{
- 
   padding: 0.35em;
 
   border-color: #000;

@@ -18,7 +18,7 @@
     <!-- Referencia a la hoja de estilos del documento -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />    
     <link rel="stylesheet" type="text/css" href="estilo/trabajo.css" />    
-    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />    
+    <link rel="stylesheet" type="text/css" href="estilo/layout-DELETE.css" />    
   </head>
 
   <body>
@@ -45,84 +45,86 @@
       <main>
 
         <section>
-          <h2>¿Por qué un cuestionario sobre TypeScrypt?</h2>
+          <h2>¿Por qué aprender a programar en diferentes lenguajes?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in finibus ligula. Sed congue tincidunt blandit. Etiam faucibus quis neque id condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris blandit imperdiet metus ut cursus. Maecenas fringilla sodales tempor. Nulla odio dui, consectetur eget tellus vel, dapibus rutrum nibh. Sed gravida purus lorem, vel rhoncus nibh ultricies sed. Phasellus scelerisque malesuada dapibus. Vivamus feugiat semper sapien. Quisque non libero at eros vehicula aliquet at quis risus. Nullam porta eu sapien id aliquet. Praesent sit amet blandit nibh, sed tristique justo.
+            Imagina que te han entregado una tarea y eres libre de elegir el lenguaje de programación. La asignación implica todo tipo de manipulación de cadenas: leer cadenas, dividir cadenas, recortar, unir y ejecutar expresiones regulares sobre cadenas, todo en UTF-8 y, por supuesto, los emojis deben funcionar. ¿Qué lenguaje elegirías? ¿C? Oh, por favor no.
+          </p>
+
+          <p>
+            Los diferentes lenguajes de programación son buenos para algunas cosas y malos para otras. Cada uno hace ciertas cosas más fáciles y, a su vez, otras más difíciles. Dependiendo de lo que queramos hacer, podemos ahorrar mucho trabajo si elegimos el lenguaje de programación apropiado, el que hace que resolver el tipo de problema al cual nos enfrentamos sea más sencillo.
+          </p>
+
+          <p>
+            Cada lenguaje de programación es una lente a través de la cual podemos ver el problema que intentamos resolver. A través de algunos de ellos el problema parece complicado, agotador. A través de otros, ni siquiera parece un problema en absoluto, apenas se ve la diferencia con cualquier otra cosa mundana que uno pueda hacer en este lenguaje.
           </p>
         </section>
         
-        <form name="Formulario Sobre el Lenguaje TypeScript">
-          <p>
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name"><br> 
-          </p>
-          <p>
-            <label for="mail">Email:</label><br>
-            <input type="email" id="mail"><br> 
-          </p>
-          
-          <p>
-            <label for="phone">Tfno.:</label><br>
-            <input type="tel" id="phone"><br> 
-          </p>
-          
-          <fieldset>
-            <legend>¿Ha utilizado TypeScript alguna vez?</legend><br>
-            
-              <p>
-                <input type="radio" id="si-mucho" name="radio-ts" />
-                <label for="si-mucho"> Sí, utilizo TypeScript habitualmente</label>
-              </p>
-            
-            
-              <p>
-                <input type="radio" id="si-poco"  name="radio-ts"/>
-                <label for="si-poco"> Sí, he utilizado TypeScript en alguna ocasión</label>
-              </p>
-            
-            
-              <p>
-                <input type="radio" id="no"  name="radio-ts" checked/>
-                <label for="no"> No, nunca he utilizado TypeScript.</label>
-              </p>
-            
-          </fieldset>
-          
+        <section>
 
-          <p>
+          <h2> Formulario sobre TypeScript </h2>
+
+          <form name="Formulario Sobre el Lenguaje TypeScript">
+            <p>
+              <label for="name">Nombre:</label><br>
+              <input type="text" id="name"><br>
+            </p>
+            <p>
+              <label for="mail">Email:</label><br>
+              <input type="email" id="mail"><br>
+            </p>
+          
+            <p>
+              <label for="phone">Tfno.:</label><br>
+              <input type="tel" id="phone"><br>
+            </p>
+          
             <fieldset>
-                <legend>¿Que apartado del Lenguaje te gustaria conocer en mayor profundidad? </legend>
-
-
-                <input type="checkbox" id="tipos" >
-                <label for="tipos"> Sistema de Tipos</label><br>
-
-                <input type="checkbox" id="exp" >
-                <label for="exp"> Expresiones </label><br>
-
-                <input type="checkbox" id="func" >
-                <label for="func"> Funciones </label><br>
-
-                <input type="checkbox" id="classes" >
-                <label for="classes"> Clases e Interfaces </label><br>
-
-                <input type="checkbox" id="scripts" >
-                <label for="scripts"> Scripts y modulos </label><br>
-
-
-
-            </fieldset>
-          </p>
+              <legend>¿Ha utilizado TypeScript alguna vez?</legend><br>
           
-          <p>
-            <label for="comentario"> ¿Qué le gustaría comentar? </label>
-            <textarea id="comentario" cols="50" rows="10"></textarea>
-          </p>
-
-          <p>
-            <input id="submit-button" type="submit" value="Envia el Formulario">
-          </p>
-        </form>
+                <p>
+                  <input type="radio" id="si-mucho" name="radio-ts" />
+                  <label for="si-mucho"> Sí, utilizo TypeScript habitualmente</label>
+                </p>
+          
+          
+                <p>
+                  <input type="radio" id="si-poco"  name="radio-ts"/>
+                  <label for="si-poco"> Sí, he utilizado TypeScript en alguna ocasión</label>
+                </p>
+          
+          
+                <p>
+                  <input type="radio" id="no"  name="radio-ts" checked/>
+                  <label for="no"> No, nunca he utilizado TypeScript.</label>
+                </p>
+          
+            </fieldset>
+          
+            <p>
+              <fieldset>
+                  <legend>¿Que apartado del Lenguaje te gustaria conocer en mayor profundidad? </legend>
+                  <input type="checkbox" id="tipos" >
+                  <label for="tipos"> Sistema de Tipos</label><br>
+                  <input type="checkbox" id="exp" >
+                  <label for="exp"> Expresiones </label><br>
+                  <input type="checkbox" id="func" >
+                  <label for="func"> Funciones </label><br>
+                  <input type="checkbox" id="classes" >
+                  <label for="classes"> Clases e Interfaces </label><br>
+                  <input type="checkbox" id="scripts" >
+                  <label for="scripts"> Scripts y modulos </label><br>
+              </fieldset>
+            </p>
+          
+            <p>
+              <label for="comentario"> ¿Qué le gustaría comentar? </label>
+              <textarea id="comentario" cols="50" rows="10"></textarea>
+            </p>
+            <p>
+              <input id="submit-button" type="submit" value="Envia el Formulario">
+            </p>
+          </form>
+        </section>
       </main>
 
       <!-- Pie de pagina del documento -->
