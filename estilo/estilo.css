@@ -3,14 +3,25 @@
     
     Descripcion de la hoja de estilos
 *****************************************/
+/*Especificidad: 001*/
 footer {
-    background-color: #3178C6;
+    background-color: #1F427A;
     color: #FAF9F8;
   }
-  
+  /*Especificidad: 001*/
   header {
     background-color: #3178C6;
     color: #FAF9F8;
+
+    padding: 3%;
+    margin: 1.9%;
+
+
+    border-style: solid;
+    border-color: #00273F;
+
+    /* Borde redondeado */
+    border-radius: 1ex; 
   
   }
 
@@ -20,11 +31,16 @@ body {
     background-color: #235A97;
   }
 
-  main > section {
-    background-color: #FAF9F8;
-  }
+/*Especificidad: 002*/
+main > section {
+  background-color: #FAF9F8;
 
+  margin: 2%;
+  padding: 3%;
 
+  /* Borde redondeado */
+  border-radius: 1ex;
+}
 
   /*Especificidad: 002*/
 section h2 {
@@ -35,20 +51,25 @@ section h2 {
 section h3 {
     background-color: #F1DD35;
     color:  black;
+
+    padding: 1%;
 }  
 
-input:nth-last-child(-n+1) {
-    background-color: #F1DD35;
+/*Especificidad: 001*/
+form {
+  margin: 2%;
 }
 
-footer {
-    background-color: #3178C6;
-}
-
-
+/*Especificidad: 001*/
 nav {
     background-color: #3178C6;
     color: #FAF9F8;
+
+    margin: 1.9%;
+
+
+  border-style: solid;
+  border-color: #00273F;
 }
 
 /*Especificidad: 002*/
@@ -56,10 +77,17 @@ nav > a {
     font-size: large;
     background-color: #F1DD35;
     color: #000;
+
+    margin: 2%;
+    padding: 1.5%;
+
+    border-width: 0.3ex;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 1ex;
 }
 
 /* estilo de tabla */
-
 table {
   border-collapse: collapse;
 }
@@ -67,6 +95,11 @@ table {
 /*Especificidad: 002*/
 table caption {
   visibility: hidden;
+}
+
+/*Especificidad: 002*/
+footer > a {
+  color: #FFFFFF;
 }
 
 

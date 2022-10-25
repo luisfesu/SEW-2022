@@ -38,26 +38,45 @@ main {
     grid-area: "main";
 } */
 
+section {
+    display:grid;
 
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    
+}
 
-    justify-content: space-around; 
-    align-items: center;
+section h2 {
+    grid-row: 1;
+    grid-column: 1 ;
+    justify-self: center;
+}
+section img {
+    grid-row: 1;
+    grid-column: 2 ;
+}
+section > section {
+    display: block;
+    grid-column: 1 / span 2;
 }
 
 
 section img {
 
-max-width: 100%;
+    place-self: center;
+
+    max-width: 100%;
+    height: auto;
 }
 
 section video {
+    align-self:stretch;
+    display: block;
+    justify-self:stretch;
+
     
     width:100%;
-    height:auto;
+    height:100%;
 }
 
 footer {
